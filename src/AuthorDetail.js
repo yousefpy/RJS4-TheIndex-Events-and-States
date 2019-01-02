@@ -14,7 +14,11 @@ class AuthorDetail extends Component {
           <h3>
             {anAuthor.first_name} {anAuthor.last_name}
           </h3>
-          <img src={anAuthor.imageUrl} className="img-thumbnail" />
+          <img
+            src={anAuthor.imageUrl}
+            className="img-thumbnail"
+            alt="{anAuthor.first_name}+{anAuthor.last_name}"
+          />
         </div>
         <table className="mt-3 table">
           <thead>
